@@ -41,5 +41,11 @@ public class Main {
         thief.steal();
         thief.changeMethod(new SubtleMethod());
         thief.steal();
+
+        System.out.println("The alchemist begins his work.");
+        var coin1 = CoinFactory.getCoin(CoinType.COPPER);
+        var coin2 = CoinFactory.getCoin(CoinType.GOLD);
+        System.out.println(coin1.getDescription());
+        System.out.println(coin2.getDescription());
     }
 }
