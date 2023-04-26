@@ -8,8 +8,5 @@ public enum WeatherType {
     WeatherType() {
     }
 
-    @Override
-    public String toString() {
-        return "WeatherType{}";
-    }
+
 }

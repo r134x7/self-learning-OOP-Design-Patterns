@@ -28,5 +28,13 @@ public class Main {
 
         System.out.println("Message from the elves: ");
         messenger.messageFromElves().print();
+
+        var weather = new Weather();
+        weather.addObserver(new Orcs());
+        weather.addObserver(new Hobbits());
+        weather.timePasses();
+        weather.timePasses();
+        weather.timePasses();
+        weather.timePasses();
     }
 }

@@ -2,8 +2,6 @@ public class Hobbits implements WeatherObserver {
 
     @Override
     public void update(WeatherType currentWeather) {
-        switch (currentWeather) {
-            System.out.println("The hobbits are facing " + currentWeather.getDescription() + " weather now");
-        }
+            System.out.println("The hobbits are facing " + currentWeather.toString() + " weather now\n");
     }
 }

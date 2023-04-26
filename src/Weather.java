@@ -32,7 +32,7 @@ public class Weather {
         }
     }
 
-    public void getDescription() {
-
+    public String getDescription() {
+        return "something";
     }
 }
