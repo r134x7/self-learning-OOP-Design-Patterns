@@ -57,6 +57,14 @@ public class Main {
         System.out.println(king.getDescription());
         System.out.println(army.getDescription());
 
-        
+        System.out.println("Green dragon spotted ahead!");
+        var dragonSlayer = new DragonSlayer(new MeleeStrategy());
+        dragonSlayer.goToBattle();
+        System.out.println("Red dragon emerges!");
+        dragonSlayer.changeStrategy(new ProjectileStrategy());
+        dragonSlayer.goToBattle();
+        System.out.println("Blue dragon emerges!");
+        dragonSlayer.changeStrategy(new SpellStrategy());
+        dragonSlayer.goToBattle();
     }
 }
