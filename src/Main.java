@@ -1,3 +1,5 @@
+import com.sun.jdi.IntegerValue;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -66,5 +68,17 @@ public class Main {
         System.out.println("Blue dragon emerges!");
         dragonSlayer.changeStrategy(new SpellStrategy());
         dragonSlayer.goToBattle();
+
+        var enumIvoryTower1 = EnmIvoryTower.INSTANCE;
+        var enumIvoryTower2 = EnmIvoryTower.INSTANCE;
+        System.out.printf("enumIvoryTower1=%s\n", enumIvoryTower1);
+        System.out.printf("enumIvoryTower2=%s\n", enumIvoryTower2);
+
+        System.out.println("Inside main()");
+        Resource<Integer> ir = IntegerSingleton.instance();
+        Resource<Integer> ir2 = IntegerSingleton.instance();
+        SingletonPattern.show(ir);
+        SingletonPattern.put(ir2, Integer.valueOf(9));
+        SingletonPattern.show(ir);
     }
 }
